@@ -1,0 +1,17 @@
+package com.borak.movieApp.service;
+
+import com.borak.movieApp.domain.Role;
+import com.borak.movieApp.domain.User;
+
+import java.util.List;
+
+public interface UserService {
+
+    User saveUser(User user);
+
+    Role saveRole(Role role);
+
+    void addRoleToUser(String username, String roleName);
+
+    User getUser(String username);
+}
